@@ -1,0 +1,32 @@
+h1  {
+    color : blue
+}
+
+.classSelector {
+
+    background-color: rgb(224, 22, 22);
+}
+
+#id {
+    font-size: 50px;
+}
+
+p em {
+    color : green
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+p + h6 {
+    background-color: aqua;
+}
+
+input[type="text"] {
+    border : 1px solid black;
+    
+    font-size: 30px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elements Example</title>
+    <style>
+        /* Pseudo-elements */
+        p::before {
+            content: "Note: ";
+            font-weight: bold;
+            color: red;
+        }
+
+        p::after {
+            content: " [Read more]";
+            color: blue;
+        }
+
+        p::first-line {
+            font-weight: bold;
+            color: green;
+        }
+
+        p::first-letter {
+            font-size: 2em;
+            color: blue;
+        }
+
+        ::selection {
+            background: yellow;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-elements Example</h1>
+
+    <p>This is a paragraph demonstrating various pseudo-elements. Select this text to see the ::selection pseudo-element in action.</p>
+
+    <p>Here is another paragraph to show how ::before and ::after work. Notice the inserted content before and after this text.</p>
+</body>
+</html>
