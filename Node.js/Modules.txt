@@ -1,0 +1,31 @@
+What is Module in Node.js?
+
+-> Consider module to be the same as Javascript Libarires
+->  A set of function you want to include in your application
+
+Include Modules 
+
+->  To Include a module, use the require()  function with the name  of the module:
+
+Example :
+
+ var  http = require('http);
+
+ -> Now your Application has access to the HTTP Module, and is able to create a server: 
+
+
+ htttp.createServer( function (req, res) {
+    res.writeHead(200, {
+        "Content-Type" : 'text/html'
+    });
+    res.end("Helo world");
+ }).listen(8080);
+
+Create Your Own Module 
+
+
+exports.MyDateTime = function () {
+    return Date();
+}
+
+
