@@ -1,4 +1,4 @@
-1.  Program to Find the Longest Word in a Given Sentence 
+// 1.  Program to Find the Longest Word in a Given Sentence 
 
 
 
@@ -178,3 +178,16 @@ function Maximum(arr) {
 }
 
 console.log(Maximum([1,2,3,4,5,1,1,2,1,1]))
+
+
+// 6 . Factorial of a  Number 
+
+function factorial(n) {
+    if ( n == 0 || n == 1) {
+        return 1 ;
+    }
+
+    return n * factorial(n-1)
+}
+
+console.log(factorial(5))
